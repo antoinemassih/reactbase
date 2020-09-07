@@ -15,7 +15,7 @@ body{
   flex-wrap: nowrap;
   flex-direction:column;
   width:100%;
-  flex-grow: 1;
+
 
 
 }
@@ -24,6 +24,10 @@ body{
   text-align: center;
 
 }
+.flex-container > div.main-pane {
+   text-align: center;
+flex:1;
+ }
 
 .flex-container > div.navbar {
   width:100%;
@@ -34,22 +38,24 @@ body{
 .flex-container2 {
   display: flex;
   flex-wrap: nowrap;
-  flex-grow:1;
-  min-height: 80vh;
+  height: 100%;
+
+
 
 }
 
 .flex-container2 > div.main {
+padding:20px;
 
-  width: 85%;
   height: 100%;
   text-align: center;
   flex-grow: 1;
 }
 
 .flex-container2 > div.side-right {
-  background-color:#182026;
-  width: 10%;
+  background-color:#293742;
+  width: 80px;
+  padding:8px;
   text-align: left;
 }
 
@@ -62,7 +68,7 @@ border-left: #202B33 2px;
 
 }
 .flex-container > div.app-footer {
-  background-color:#293742;
+  background-color:#182026;
   width: 100%;
   justify-self: flex-end;
 

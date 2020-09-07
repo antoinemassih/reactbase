@@ -9,22 +9,26 @@ import { Cell, Column, Table, Utils } from "@blueprintjs/table";
 
 
 const REORDERABLE_TABLE_DATA = [
-    ["A", "Apple", "Ape", "Albania", "Anchorage"],
-    ["B", "Banana", "Boa", "Brazil", "Boston"],
-    ["C", "Cranberry", "Cougar", "Croatia", "Chicago"],
-    ["D", "Dragonfruit", "Deer", "Denmark", "Denver"],
-    ["E", "Eggplant", "Elk", "Eritrea", "El Paso"],
+    ["AAPL", "120", "Ape", "Albania", "Anchorage"],
+    ["GOOG", "1600", "Boa", "Brazil", "Boston"],
+    ["FB", "289", "Cougar", "Croatia", "Chicago"],
+    ["AMZN", "3280", "Deer", "Denmark", "Denver"],
+    ["NFLX", "490", "Elk", "Eritrea", "El Paso"],
 ].map(([letter, fruit, animal, country, city]) => ({ letter, fruit, animal, country, city }));
 
 export class TableReorderable extends React.PureComponent<IExampleProps, ITableReorderableExampleState> {
      state: ITableReorderableExampleState = {
         columns: [
             // these cellRenderers are only created once and then cloned on updates
-            <Column key="1" name="Letter" cellRenderer={this.getCellRenderer("letter")} />,
-            <Column key="2" name="Fruit" cellRenderer={this.getCellRenderer("fruit")} />,
-            <Column key="3" name="Animal" cellRenderer={this.getCellRenderer("animal")} />,
-            <Column key="4" name="Country" cellRenderer={this.getCellRenderer("country")} />,
-            <Column key="5" name="City" cellRenderer={this.getCellRenderer("city")} />,
+            <Column key="1" name="Symbol" cellRenderer={this.getCellRenderer("letter")} />,
+            <Column key="2" name="Last" cellRenderer={this.getCellRenderer("fruit")} />,
+            <Column key="3" name="% Change" cellRenderer={this.getCellRenderer("animal")} />,
+            <Column key="4" name="Volume" cellRenderer={this.getCellRenderer("country")} />,
+            <Column key="5" name="RSI" cellRenderer={this.getCellRenderer("city")} />,
+            <Column key="5" name="Next Level Up" cellRenderer={this.getCellRenderer("pablo")} />,
+            <Column key="5" name="Next Level Down" cellRenderer={this.getCellRenderer("esco")} />,
+            <Column key="5" name="Score" cellRenderer={this.getCellRenderer("bar")} />,
+
         ],
         data: REORDERABLE_TABLE_DATA,
         enableColumnInteractionBar: false,

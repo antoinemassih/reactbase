@@ -5,6 +5,7 @@ import { Button } from "@blueprintjs/core";
 import {NavbarExample} from './Components/Navbar'
 import {TableReorderable} from "./Components/Table";
 import {MyPanel} from "./Components/Panel";
+import {Rightpane} from "./Components/rightpane";
 import "@blueprintjs/core/lib/scss/variables.scss"
 function App() {
   return (
@@ -14,11 +15,11 @@ function App() {
               <NavbarExample/>
           </header>
           </div>
-          <div>
+          <div className="main-pane">
               <div className="flex-container2">
                   <div className="side-left"><MyPanel /></div>
                   <div className="main"><TableReorderable/></div>
-                  <div className="side-right">5</div>
+                  <div className="side-right"><Rightpane></Rightpane></div>
               </div>
           </div>
           <div className="app-footer">footer</div>

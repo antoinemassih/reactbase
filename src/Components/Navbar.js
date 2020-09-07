@@ -38,7 +38,7 @@ export class NavbarExample extends React.PureComponent<IExampleProps, INavbarExa
                         <Button className={Classes.MINIMAL} icon="timeline-area-chart" text="Charts" />
                         <Button className={Classes.MINIMAL} icon="list" text="Watch list" />
                         <Button className={Classes.MINIMAL} icon="layout-hierarchy" text="Options" />
-                        <Button className={Classes.MINIMAL} icon="document" text="settings" />
+                        <Button className={Classes.MINIMAL} icon="flame" text="Hotlist" />
                         </div>
                         <NavbarDivider />
                         <NavbarHeading>Search</NavbarHeading>
