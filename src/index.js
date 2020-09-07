@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import '@blueprintjs/core/src/blueprint.scss'
+import '@blueprintjs/icons/resources/icons/icons-16.eot'
+import '@blueprintjs/icons/src/blueprint-icons.scss'
 import * as serviceWorker from './serviceWorker';
+
 
 ReactDOM.render(
   <React.StrictMode>
