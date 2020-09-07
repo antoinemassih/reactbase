@@ -9,7 +9,7 @@ import {
     NavbarDivider,
     NavbarGroup,
     NavbarHeading,
-    Switch,
+    Switch,Icon,
 } from "@blueprintjs/core";
 
 
@@ -29,6 +29,8 @@ export class NavbarExample extends React.PureComponent<IExampleProps, INavbarExa
 
                 <Navbar>
                     <NavbarGroup align={alignRight ? Alignment.RIGHT : Alignment.LEFT}>
+                        <Icon icon="layers" iconSize="20" />
+                        <NavbarDivider />
                         <NavbarHeading><b>LevelTrader</b></NavbarHeading>
                         <NavbarDivider />
                         <div className="bp3-navbar-group bp3-align-left">

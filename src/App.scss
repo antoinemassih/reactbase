@@ -1,72 +1,70 @@
 @import "../node_modules/@blueprintjs/core/lib/less/variables.less";
 
 body{
-
   background-color: #202B33;
 }
 
 .flex-box {
   display: flex;
-  height: 100%;
-widht:100%;
-
+  height: 100vh;
+  width:100%;
 }
+
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-
   flex-direction:column;
-width:100%;
-  height: 100%;
+  width:100%;
+  flex-grow: 1;
 
 
 }
 
 .flex-container > div {
-
-  height: 100%;
-
   text-align: center;
 
-
 }
+
 .flex-container > div.navbar {
-
-
   width:100%;
-  text-align: center;
-
 
 }
+
 
 .flex-container2 {
   display: flex;
   flex-wrap: nowrap;
+  flex-grow:1;
+  min-height: 80vh;
 
 }
 
 .flex-container2 > div.main {
 
-  width: 70%;
+  width: 85%;
   height: 100%;
   text-align: center;
-
-
+  flex-grow: 1;
 }
+
 .flex-container2 > div.side-right {
-background-color:#182026;
+  background-color:#182026;
   width: 10%;
-
   text-align: left;
-
-
 }
 
 .flex-container2 > div.side-left {
   background-color:#293742;
-  width: 20%;
+  width: 15%;
 border-left: #202B33 2px;
   text-align: left;
+
+
+}
+.flex-container > div.app-footer {
+  background-color:#293742;
+  width: 100%;
+  justify-self: flex-end;
 
 
 }

@@ -21,7 +21,7 @@ function App() {
                   <div className="side-right">5</div>
               </div>
           </div>
-          <div>footer</div>
+          <div className="app-footer">footer</div>
 
       </div>
 </div>
