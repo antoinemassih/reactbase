@@ -2,10 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import { Button } from "@blueprintjs/core";
-import {NavbarExample} from './Components/Navbar'
-import {TableReorderable} from "./Components/Table";
-import {MyPanel} from "./Components/Panel";
-import {Rightpane} from "./Components/rightpane";
+import {NavbarExample} from './Components/UIComponents/Navbar'
+import {TableReorderable} from "./Components/UIComponents/Table";
+import {MyPanel} from "./Components/UIComponents/Panel";
+import {Rightpane} from "./Components/UIComponents/rightpane";
 import "@blueprintjs/core/lib/scss/variables.scss"
 function App() {
   return (
