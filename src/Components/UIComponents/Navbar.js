@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { Component } from 'react';
 
 import {
     Alignment,
@@ -12,31 +12,54 @@ import {
     Switch,Icon,
 } from "@blueprintjs/core";
 
+import * as useHistory from "react-router-redux";
+import {Link} from "react-router-dom";
+import {ChartPage} from "../Pages/ChartPage";
 
-export class NavbarExample extends React.PureComponent<IExampleProps, INavbarExampleState> {
-     state: INavbarExampleState = {
-        alignRight: false,
-    };
+
+export class NavbarExample extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            open: false,
+        };
+
+    }
+
+    dispatchNewRoute(route) {
+        useHistory.push(route);
+        this.setState({
+            open: false,
+        });
+
+    }
+
+
+    handleClickOutside() {
+        this.setState({
+            open: false,
+        });
+    }
+
+    openNav() {
+        this.setState({
+            open: true,
+        });
+    }
      render() {
-        const { alignRight } = this.state;
-        const options = (
-            <>
-                <H5>Props</H5>
-                <Switch checked={alignRight} label="Align right" onChange={this.handleAlignRightChange} />
-            </>
-        );
+
         return (
 
                 <Navbar>
-                    <NavbarGroup align={alignRight ? Alignment.RIGHT : Alignment.LEFT}>
+                    <NavbarGroup align={Alignment.LEFT}>
                         <Icon icon="layers" iconSize="20" />
                         <NavbarDivider />
                         <NavbarHeading><b>LevelTrader</b></NavbarHeading>
                         <NavbarDivider />
                         <div className="bp3-navbar-group bp3-align-left">
                         <Button className={Classes.MINIMAL} icon="home" text="Home" />
-                        <Button className={Classes.MINIMAL} icon="timeline-area-chart" text="Charts" />
-                        <Button className={Classes.MINIMAL} icon="list" text="Watch list" />
+                        <Link to="ChartPage"><Button className={Classes.MINIMAL} icon="timeline-area-chart" text="Charts"/></Link>
+                        <Link to="WatchListPage"><Button className={Classes.MINIMAL} icon="list" text="Watch list" /></Link>
                             <Button className={Classes.MINIMAL} icon="list" text="My Positions" />
                         <Button className={Classes.MINIMAL} icon="layout-hierarchy" text="Options" />
                         <Button className={Classes.MINIMAL} icon="flame" text="Hotlist" />
