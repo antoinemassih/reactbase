@@ -23,9 +23,7 @@ export class HotlistPage extends React.PureComponent<IExampleProps, IExampleStat
 
 
                 <div className="flex-container2">
-                    <div className="TV-TechnicalAnalysis"><TechnicalAnalysis autosize="true" symbol={'AAPL'}/></div>
-                    <div className="TV-TechnicalAnalysis"><TechnicalAnalysis autosize="true" symbol={'AMZN'}/></div>
-                    <div className="TV-TechnicalAnalysis"><TechnicalAnalysis autosize="true" symbol={'GOOG'}/></div>
+                  <div className="textBox"></div>
                 </div>
 
 
