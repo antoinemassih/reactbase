@@ -19,7 +19,13 @@ export default class PlotlyComponent extends React.Component {
                     },
                     {type: 'bar', x: [1, 2, 3,2,3,4,5,2,1,2,3,2,2], y: [2, 6, 3,7,8,7,8,7,8,7,8,7,7]},
                 ]}
-                layout={ {width: 900, height: 500} }
+                layout={ {autosize:"True",
+                    width:1500,
+                    height:800,
+
+
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)'} }
             />
             </div>
         );
