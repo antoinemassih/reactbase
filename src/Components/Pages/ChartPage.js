@@ -1,23 +1,21 @@
 import * as React from "react";
+import Plotly from "../UIComponents/Chart/PlotlyComponent";
+import {Table} from "@blueprintjs/table";
 
-import {
-    Alignment,
-    Button,
-    Classes,Icon,
-} from "@blueprintjs/core";
+export class ChartPage extends React.Component {
 
-
-export class ChartPage extends React.PureComponent<IExampleProps, IExampleState> {
-    state: IExampleState = {
-        stateExample: false,
-    };
     constructor() {
         super();
     }
     render() {
 
         return (
-<div>ChartPage</div>
+            <div className="flex-container2" >
+
+                <div>
+                    <Plotly/>
+                </div>
+            </div>
 
         );
     }

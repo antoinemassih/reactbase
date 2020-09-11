@@ -17,6 +17,18 @@ height: 100%;
 .testBox{
   width:200px;
   height: 200px;
-  padding: 10px;
+  margin: 10px;
+  background-color: white;
+
+}
+
+.flex-container2 > div.TV-TechnicalAnalysis {
+  display:flex;
+  flex-shrink: 1;
+  flex-flow: row;
+  flex-basis: content;
+  border-left: #202B33 2px;
+  text-align: left;
+
 
 }
