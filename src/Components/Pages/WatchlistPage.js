@@ -8,6 +8,7 @@ import {
 import {MyPanel} from "../UIComponents/Panel";
 import {TableReorderable} from "../UIComponents/Table";
 import {Rightpane} from "../UIComponents/rightpane";
+import AlertPanelComponent from "../UIComponents/Callouts/AlertPanel";
 
 
 export class WatchlistPage extends React.PureComponent<IExampleProps, IExampleState> {
@@ -21,8 +22,15 @@ export class WatchlistPage extends React.PureComponent<IExampleProps, IExampleSt
 
         return (
             <div className="flex-container2">
-            <div className="side-left"><MyPanel/></div>
-        <div className="main"><TableReorderable/></div>
+            <div className="side-left"><AlertPanelComponent/></div>
+        <div className="main">
+            <div>
+                <TableReorderable/>
+            </div>
+            <div>
+                <TableReorderable/>
+            </div>
+        </div>
         <div className="side-right"><Rightpane></Rightpane></div>
     </div>
 

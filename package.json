@@ -25,6 +25,7 @@
     "react-router-redux": "^4.0.8",
     "react-scripts": "3.4.3",
     "react-tradingview-technical-analysis": "^1.0.0",
+    "react-transition-group": "^1.2.1",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
