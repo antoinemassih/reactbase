@@ -2,18 +2,29 @@
 import * as React from "react";
 
 import {Callout} from "@blueprintjs/core";
+import "./alert.scss"
 
 export default class AlertComponent extends React.PureComponent{
+constructor(props) {
+    super(props);
+    this.content = props.content;
+    this.title =props.title;
+    this.intent = props.intent;
+    this.state = {
 
+    isShow: true
+    }
+
+}
      render() {
 
-        return (
 
-                <Callout title="Hello">
-                    The component is a simple wrapper around the CSS API that provides props for modifiers and optional
-                    title element. Any additional HTML props will be spread to the rendered
-                    element.
+        return (
+    <div>
+                <Callout  className="alert-callout" title= {this.title} intent={this.intent}>
+                  <div>{this.content}</div>
                 </Callout>
+    </div>
 
         );
     }

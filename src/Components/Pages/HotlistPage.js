@@ -1,19 +1,11 @@
 import * as React from "react";
-import TechnicalAnalysis from 'react-tradingview-technical-analysis';
 import './pageStyles/HotlistPage.scss'
-
-import {
-    Alignment,
-    Button,
-    Classes,Icon,
-} from "@blueprintjs/core";
 import AlertComponent from "../UIComponents/Callouts/AlertComponent";
+import AlertPanelComponent from "../UIComponents/Callouts/AlertPanel";
 
 
-export class HotlistPage extends React.PureComponent<IExampleProps, IExampleState> {
-    state: IExampleState = {
-        stateExample: false,
-    };
+export class HotlistPage extends React.PureComponent{
+
     constructor() {
         super();
     }
@@ -24,8 +16,10 @@ export class HotlistPage extends React.PureComponent<IExampleProps, IExampleStat
 
 
                 <div className="flex-container2">
+<div>
+    <AlertPanelComponent/>
+</div>
 
-                    {AlertComponent}
                 </div>
 
 
