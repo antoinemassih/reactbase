@@ -12,17 +12,23 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import {Redirect, Switch} from "react-router";
 import history from './utils/history';
 
-
-
 import {App} from "./App";
+import {createStore} from "redux";
 
 
+
+
+import rootReducer from "./reducers";
+
+const store = createStore(rootReducer)
 ReactDOM.render(
-<Router history={history} >
+    <Provider store={store}>
+        <Router history={history} >
 
-    <App/>
+            <App/>
 
-</Router>
+        </Router>
+    </Provider>
        ,
     document.getElementById('root')
 );
