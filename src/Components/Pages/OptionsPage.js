@@ -17,7 +17,7 @@ export class OptionsPage extends React.PureComponent<IExampleProps, IExampleStat
     render() {
 
         return (
-            <div>OptionsPage</div>
+            <div>Were going to start testing some graphics here</div>
 
         );
     }
