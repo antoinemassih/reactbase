@@ -60,9 +60,9 @@ export class NavbarExample extends React.Component{
                         <Button className={Classes.MINIMAL} icon="home" text="Home" />
                         <Link to="ChartPage"><Button className={Classes.MINIMAL} icon="timeline-area-chart" text="Charts"/></Link>
                         <Link to="WatchListPage"><Button className={Classes.MINIMAL} icon="list" text="Watch list" /></Link>
-                            <Button className={Classes.MINIMAL} icon="list" text="My Positions" />
-                        <Button className={Classes.MINIMAL} icon="layout-hierarchy" text="Options" />
-                            <Link to="HotListPage"><Button className={Classes.MINIMAL} icon="flame" text="Hotlist" /></Link>
+                        <Link to="MyPositionsPage"><Button className={Classes.MINIMAL} icon="list" text="My Positions" /></Link>
+                        <Link to="OptionsPage"><Button className={Classes.MINIMAL} icon="layout-hierarchy" text="Options" /></Link>
+                        <Link to="HotListPage"><Button className={Classes.MINIMAL} icon="flame" text="Hotlist" /></Link>
                         </div>
                         <NavbarDivider />
                         <NavbarHeading>Search</NavbarHeading>
